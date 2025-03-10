@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSparks Innovation Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+        .hero {
+            background: linear-gradient(to right, #1abc9c, #16a085);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        .services, .audience {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service, .target {
+            width: 30%;
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .service:hover, .target:hover {
+            background: #2980b9;
+            transform: translateY(-5px);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            padding: 10px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact button:hover {
+            background: #c0392b;
+        }
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            .services, .audience {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service, .target {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechSparks Innovation Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#audience">Target Audience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Empowering Technology, Digital Skills, and Entrepreneurship</h2>
+        <p>Join us in shaping the future of innovation.</p>
+    </section>
+    
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>TechSparks Innovation Hub aims to empower entrepreneurs by fostering innovation, providing essential digital skills, and promoting sustainable business growth.</p>
+        </section>
+        
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">Training in AI, Cloud Computing, Web Development, and Cybersecurity</div>
+                <div class="service">Entrepreneurship Support & Business Development</div>
+                <div class="service">Networking, Mentorship, and Startup Incubation</div>
+            </div>
+        </section>
+        
+        <section id="audience" class="section">
+            <h2>Target Audience</h2>
+            <div class="audience">
+                <div class="target">Aspiring Tech Entrepreneurs</div>
+                <div class="target">Students & Professionals Seeking Digital Skills</div>
+                <div class="target">Early-Stage Startups & Business Owners</div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 TechSparks Innovation Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
